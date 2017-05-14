@@ -1,0 +1,192 @@
+/* Layout */
+
+body {
+	margin:0;
+	padding:0;
+  color: white;
+  font-family: Ariel;
+  width:100%;
+  height: 890px;
+
+}
+
+footer {
+  height: 30px;
+  width:100%;
+	background: black;
+  position: absolute;
+  text-align: center;
+
+}
+
+
+
+h1 {
+	color:#7a2e40;
+	margin:0 0 10px;
+	padding-top: 10px;
+	font:normal 17px Georgia, serif;
+}
+
+
+p {
+	margin:0;
+	padding:0;
+}
+
+#wrapper{
+  width: 100%;
+  height: 55px;
+  background: orange;
+
+}
+
+#logo{
+  float: left;
+
+}
+#logo h1{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+#nav{
+	width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  background: #525879;
+  opacity: 0.8;
+  filter: alpha (opacity=80);
+}
+
+
+
+#nav ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  float: right;
+  line-height: 20px;
+
+}
+#nav ul li{
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+}
+
+#nav ul li a{
+  color: white;
+  padding: 10px;
+  margin: 0px;
+  text-decoration: none;
+  display: block;
+}
+
+#nav  ul li:hover{
+  background-color: #7f85ab;
+  transition:all 0.40s;
+}
+#nav  ul li:hover ul{
+display: block;
+}
+#nav ul li ul{
+  display: none;
+
+}
+#nav ul li ul li{
+  background: #525879;
+  display: block;
+  width: 200px;
+  height: 90px;
+  text-align: center;
+}
+#nav li li a:hover{
+  text-decoration: #7f85ab;
+}
+.active{
+  background: #7f85ab;
+}
+
+/* this is the grid side */
+#showcase {
+  width: 1280px;
+  height: 330px;
+  background: url(/images/book.jpg);
+  background-size: contain;
+  text-align: center;
+}
+#showcase h1{
+  padding-top: 90px;
+  font-size: 40px;
+}
+
+#showcase p{
+  font-size: 22px;
+  color: #222;
+}
+
+#newsletter {
+  width:100%;
+  height: 70px;
+  background: #746760;
+}
+
+#information {
+  width:100%;
+  height: 400px;
+  background: white;
+}
+
+.image1 {
+  float: left;
+  width: 255px;
+  height: 390px;
+  margin: 5px;
+  border: 1px solid;
+  background-image: url(/images/head.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.image2 {
+  float: left;
+  width: 330px;
+  height: 390px;
+  margin: 5px;
+  border: 1px solid;
+  background-image: url(/images/nice.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.image3 {
+  float: left;
+  width: 330px;
+  height: 390px;
+  margin: 5px;
+  border: 1px solid;
+  background-image: url(/images/head_phone.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.image4 {
+  float: left;
+  width: 200px;
+  height: 390px;
+  margin: 5px;
+  border: 1px solid;
+  background-image: url(/images/cat.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+/* Large desktop */ @media (min-width: 1200px) { ... }
+/* Portrait tablet to landscape and desktop */ @media (min-width: 768px) and (max-width: 979px) { ... }
+/* Landscape phone to portrait tablet */ @media (max-width: 767px) { ... }
+/* Landscape phones and down */ @media (max-width: 400px) { ... }
