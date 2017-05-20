@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="/css/pills.css"/>
     <link rel="stylesheet" type="text/css" href="/css/gallary.css"/>
@@ -28,36 +29,13 @@
           </div>
       </div>
 
+				 <div class = "main-page">
+					 <%- include("page/" + pages, pageStuf); %>
 
-    <div class="row">
-       <div class="col twelve"></div>
-    </div>
+				 </div>
 
-    <div class="row">
-       <div class="col eleven"></div>
-       <div class="col one"></div>
-    </div>
-
-    <div class="row">
-       <div class="col three"></div>
-       <div class="col three"></div>
-       <div class="col three"></div>
-       <div class="col three"></div>
-       <div class="col bit"></div>
-    </div>
-
-    <div class="row">
-       <div class="col six"></div>
-       <div class="col three"></div>
-       <div class="col three"></div>
-    </div>
-
-
-
-  </div>
-
-       <footer>
-          <p>Donald Tofuah &copy; <?php echo @date("y"); ?> All Rights Reserved.</p>
-      </footer>
-  </body>
-</html>
+				 <footer>
+						Donald Tofuah &copy; <?php echo @date("y"); ?> All Rights Reserved.
+				</footer>
+		</body>
+	</html>
