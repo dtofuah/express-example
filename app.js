@@ -12,22 +12,23 @@ function changeTemplate(res, pages, pageStuf) {
 	return res.render("template", {
 		pages: pages,
 		pageStuf: pageStuf,
-		header: "Donald Tofuah",
 	});
 }
 
-app.get("/country", function(req, res) {
+app.get("/country/:code", function(req, res) {
 	console.log("Serving up country page");
-	var country = countries[req.params.code];
-	console.log(countries);
+	const country = countries[req.params.code];
+
 
 	if (!country) {
 		res.status(404);
-		return res.send("This code is not recognized");
+		return res.send("This is an incorrect Country code");
 	}
 
-	res.render("page/country", "Contry", country);
+	res.render("page/country", { country: country });
 });
+
+
 
 app.get("/gallary", function(req, res) {
 	console.log("Seriving up Gallary Page....");

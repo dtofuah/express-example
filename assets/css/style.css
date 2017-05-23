@@ -140,7 +140,9 @@ display: block;
   height: 400px;
   background: white;
 }
-
+.country {
+	text-align: center;
+}
 .image1 {
   float: left;
   width: 255px;
